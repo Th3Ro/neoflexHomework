@@ -9,4 +9,8 @@ public class Main {
         char charVariable = 'a';
         boolean booleanVariable = false;
     }
+
+    public double calculateExpresion (double a, double b, double c, double d) {
+        return a * (b + (c / d));
+    }
 }
