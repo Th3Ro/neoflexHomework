@@ -18,4 +18,8 @@ public class Main {
         double sum = first + second;
         return 10 < sum && sum <= 20;
     }
+
+    public void isPositive (int number) {
+        System.out.println(number >= 0 ? "Положительное" : "Отрицательное");
+    }
 }
