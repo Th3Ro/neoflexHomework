@@ -19,7 +19,13 @@ public class Main {
         return 10 < sum && sum <= 20;
     }
 
-    public void isPositive (int number) {
+    public void isPositiveOrNegative (int number) {
         System.out.println(number >= 0 ? "Положительное" : "Отрицательное");
+    }
+
+    public boolean isNegative (int number) {
+        if (number < 0)
+            return true;
+        return false;
     }
 }
