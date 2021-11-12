@@ -13,4 +13,9 @@ public class Main {
     public double calculateExpresion (double a, double b, double c, double d) {
         return a * (b + (c / d));
     }
+
+    public boolean isSumBetweenTenAndTwenty (double first, double second) {
+        double sum = first + second;
+        return 10 < sum && sum <= 20;
+    }
 }
