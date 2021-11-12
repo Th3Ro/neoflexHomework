@@ -32,4 +32,12 @@ public class Main {
     public void helloMethod (String name) {
         System.out.println("Привет, " + name + "!");
     }
+
+    public void isLeapYear (int year) {
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+            System.out.println("Год високосный.");
+        } else {
+            System.out.println("Год не високосный.");
+        }
+    }
 }
