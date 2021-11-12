@@ -28,4 +28,8 @@ public class Main {
             return true;
         return false;
     }
+
+    public void helloMethod (String name) {
+        System.out.println("Привет, " + name + "!");
+    }
 }
