@@ -1,3 +1,5 @@
+package NeoflexHoomework.src.ru.neoflex.homework.startJavaCore;
+
 public class Main {
     public static void main(String[] args) {
         byte byteVariable = 127;
