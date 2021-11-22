@@ -24,6 +24,10 @@ public class Main {
                     workWithFigures();
                     break;
                 case "enum":
+                    System.out.println("Дни недели из созданного Enum");
+                    for(MyEnum myEnum: MyEnum.values) {
+                        System.out.println(myEnum);
+                    }
                     break;
                 case "exit":
                     isExit = true;
