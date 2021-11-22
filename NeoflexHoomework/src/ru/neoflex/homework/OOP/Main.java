@@ -1,5 +1,8 @@
 package NeoflexHoomework.src.ru.neoflex.homework.OOP;
 
+import NeoflexHoomework.src.ru.neoflex.homework.OOP.geometry.*;
+
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
@@ -18,6 +21,7 @@ public class Main {
                     workWithContacts();
                     break;
                 case "geometry":
+                    workWithFigures();
                     break;
                 case "enum":
                     break;
@@ -82,6 +86,21 @@ public class Main {
                     System.out.println("Не верная команда");
                     break;
             }
+        }
+    }
+
+    private static void workWithFigures () {
+        ArrayList<Figure> figures = new ArrayList<>();
+        figures.add(new Circle(0, 0, 5));
+        figures.add(new Line(5, 5, 17, 15));
+        figures.add(new Parallelogram(5, 5, 7, 9, 14, 9, 12, 5));
+        figures.add(new Point(1,8));
+        figures.add(new Rectangle(3, 8, 3, 13, 11, 13, 11, 8));
+        figures.add(new Square(5,10, 5, 22, 17, 22, 17, 10));
+        figures.add(new Triangle(10, 5, 15, 14, 20, 2));
+        System.out.println("Фигуры и их свойства.");
+        for(Figure figure: figures){
+            System.out.println(figure.getType() + ", length: " + figure.getLineLength() + ", area: " + figure.getArea());
         }
     }
 }
